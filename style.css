@@ -1,0 +1,731 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Section Spacing */
+section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* About Me Section */
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+/* Contact Section */
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact form button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* Responsive Nav Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Hero Image Container */
+.hero-image {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
+}
+
+/* Social Icons Container */
+.social-icons {
+  margin-top: 20px; /* Space between the profile picture and icons */
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+  color: white; /* Set default color to white */
+  font-size: 1.5rem; /* Size of icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+
+.cta-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #2980b9;
+}
+
+.hero-image {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Scroll Down Button Styles */
+.scroll-down-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-down-btn span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #3498db;
+  border-right: 2px solid #3498db;
+  transform: rotate(45deg);
+  margin-bottom: 4px;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down-btn:hover {
+  background-color: #3498db;
+}
+
+.scroll-down-btn:hover span {
+  border-color: white;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(-8px) rotate(45deg);
+  }
+  60% {
+    transform: translateY(-4px) rotate(45deg);
+  }
+}
+
+/* Experience Section Styles */
+.experience {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.experience-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-item {
+  flex: 1;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.experience-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-item li {
+  margin-bottom: 15px;
+}
+
+.experience-item strong {
+  display: block;
+  font-weight: bold;
+}
+
+.experience-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.linkedin, .cv-download {
+  width: auto;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.linkedin-btn i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582; /* Darker LinkedIn blue */
+}
+
+.cv-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.cv-btn:hover {
+  background-color: #2980b9;
+}
+
+.skills {
+  margin-top: 40px;
+}
+
+.skills h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  flex: 1 1 45%;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.skill-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item li {
+  margin-bottom: 8px;
+}
+
+.front-end {
+  border-left: 5px solid #3498db;
+}
+
+.back-end {
+  border-left: 5px solid #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-buttons {
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for smaller screens */
+ 
+  }}
+
+
+/* Projects Section Styles */
+.projects {
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center; /* Center text in the section */
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center; /* Ensure the heading is centered */
+}
+
+/* Grid container for projects */
+.projects-grid {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px;
+  flex-wrap: nowrap; /* Keep items in one line */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Individual project card styles */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  background: #f4f4f4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+  max-width: 300px; /* Ensure consistent width */
+  box-sizing: border-box;
+  margin: 10px; /* Space between cards */
+}
+
+/* Styles for project cover images */
+.project-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top of the image */
+}
+
+/* Styles for project information */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text horizontally */
+  padding: 20px;
+  text-align: center; /* Center text in the project info */
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center; /* Center items in a column layout */
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* More Info Header */
+.more-info-header {
+  text-align: center;
+  margin: 30px 0; /* Adjust spacing as needed */
+}
+
+.more-info-header h3 {
+  font-size: 1.5rem;
+  color: #333; /* Adjust color to match your theme */
+}
+
+/* Experience Section */
+.experience {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.experience-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.job-item {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.date-range {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.more-info-header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.more-info-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Buttons Container */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-bottom: 30px; /* Space below buttons */
+}
+
+.linkedin-btn,
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-btn {
+  background-color: #0077b5;
+  color: white;
+}
+
+.linkedin-btn i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582;
+}
+
+.cv-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.cv-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white; /* Set default color to white */
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+/* Specific styles for each icon if needed */
+.social-icon .fa-linkedin {
+  color: white; /* Ensure LinkedIn icon is white */
+}
+
+.social-icon .fa-x {
+  color: white; /* Ensure Twitter icon is white */
+}
+
+.social-icon .fa-medium {
+  color: white; /* Ensure Medium icon is white */
+}
+
+.social-icon .fa-dev {
+  color: white; /* Ensure Dev.to icon is white */
+}
+
+/* Social Icons Container */
+.social-icons {
+  margin-top: 20px; /* Space between the profile picture and icons */
+}
+
+.social-icon {
+  color: white; /* Set default color to white */
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+
