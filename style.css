@@ -709,6 +709,10 @@ footer {
   color: white; /* Ensure Dev.to icon is white */
 }
 
+.social-icon .fa-github {
+  color: white; /* Ensure Dev.to icon is white */
+}
+
 /* Social Icons Container */
 .social-icons {
   margin-top: 20px; /* Space between the profile picture and icons */
